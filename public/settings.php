@@ -2,7 +2,7 @@
 	/* site settings */
 	define("DEBUG_MODE", "on");
 
-	define("SITE_TITLE", "908 St.Clair");
+	define("SITE_TITLE", "1455 Rue de la Montagne");
 	define("COMPANY", "Canderel");
 	define("SITE_DESCRIPTION", "");
 	
