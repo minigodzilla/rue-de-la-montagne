@@ -1,3 +1,36 @@
+var urlString = window.location.href;
+var url = new URL(urlString);
+
+var copy;
+
+if (url.searchParams.has('en')) {
+	copy = textEn;
+} else {
+	copy = textFr;
+}
+
+$('.dm-intro .dm-heading-1').html(copy.introHeading1);
+$('.dm-intro .dm-heading-2').html(copy.introHeading2);
+$('.dm-intro .dm-copy').html(copy.introCopy);
+$('.dm-register .dm-subheading').html(copy.registerHeading);
+$('.dm-register #FirstName').attr('placeholder',copy.registerFirstName);
+$('.dm-register #v-error-FirstName').html(copy.registerFirstNameInvalid);
+$('.dm-register #LastName').attr('placeholder',copy.registerLastName);
+$('.dm-register #v-error-LastName').html(copy.registerLastNameInvalid);
+$('.dm-register #Email').attr('placeholder',copy.registerEmail);
+$('.dm-register #v-error-Email').html(copy.registerEmailInvalid);
+$('.dm-register #Phone').attr('placeholder',copy.registerPhone);
+$('.dm-register #v-error-Phone').html(copy.registerPhoneInvalid);
+$('.dm-register #IsBroker-select-opt').html(copy.registerIsBroker);
+$('.dm-register #IsBroker-select-opt-no').html(copy.registerIsBrokerOptNo);
+$('.dm-register #IsBroker-select-opt-yes').html(copy.registerIsBrokerOptYes);
+$('.dm-register #v-error-IsBroker').html(copy.registerIsBrokerInvalid);
+$('.dm-register #Bedrooms-select-opt').html(copy.registerSuitePref);
+$('.dm-register #v-error-Bedrooms').html(copy.registerSuitePrefInvalid);
+$('.dm-register .dm-mandatory').html(copy.registermandatoryFields);
+$('.dm-register .dm-btn-submit').html(copy.registerSubmit);
+$('.dm-register #Custom1-label').html(copy.registerConsent);
+
 //----------------------------------------------------------------------------//
 // ScrollMagic Animation incl. Lazy Load                                      //
 //----------------------------------------------------------------------------//

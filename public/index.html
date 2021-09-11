@@ -5,8 +5,67 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>1455 Rue de la Montagne</title>
+    <title>1455, Rue de la Montagne</title>
     <link rel="stylesheet" href="assets/css/style.css" />
+    <script type="text/javascript">
+        let textEn = {
+            introHeading1: 'ARRIVING SOON',
+            introHeading2: 'THE NEW LANDMARK',
+            introCopy: "SET TO COMPLEMENT AND ELEVATE MONTREAL'S GORGEOUS CITYSCAPE, CARTTERA AND CANDEREL INTRODUCE THEIR STUNNING NEW CONDOMINIUM, 1455 RUE DE LA MONTAGNE. UNCOVER A TRULY REFINED EXPLORATION OF BEAUTY, PASSION AND LUXURY, CRAFTED TO EXCITE THE SENSES AND EMBODY THE URBAN LIFESTYLE.",
+            registerHeading: 'REGISTER YOUR INTEREST',
+            registerFirstName: 'FIRST NAME',
+            registerFirstNameInvalid: 'Please enter your first name.',
+            registerLastName: 'LAST NAME',
+            registerLastNameInvalid: 'Please enter your last name.',
+            registerEmail: 'EMAIL',
+            registerEmailInvalid: 'Please enter your email address.',
+            registerPhone: 'PHONE',
+            registerPhoneInvalid: 'Please enter your phone number.',
+            registerIsBroker: 'ARE YOU A BROKER?',
+            registerIsBrokerOptNo: 'NO',
+            registerIsBrokerOptYes: 'YES',
+            registerIsBrokerInvalid: 'Please tell us whether you are a broker.',
+            registerSuitePref: 'WHAT SUITE ARE YOU INTERESTED IN?',
+            registerSuitePrefOpt1: 'ONE BEDROOM',
+            registerSuitePrefOpt2: 'One Bedroom + Den',
+            registerSuitePrefOpt3: 'Two Bedroom',
+            registerSuitePrefOpt4: 'Two Bedroom + Den',
+            registerSuitePrefOpt5: 'Three Bedroom',
+            registerSuitePrefInvalid: 'Please enter your suite preference.',
+            registermandatoryFields: '* MANDATORY FIELDS',
+            registerSubmit: 'SUBMIT',
+            registerConsent: 'I CONSENT TO RECEIVE FUTURE COMMUNICATION',
+        };
+
+        let textFr = {
+            introHeading1: 'ARRIVERA BIENTÔT',
+            introHeading2: 'UNE NOUVELLE ADRESSE EMBLÉMATIQUE',
+            introCopy: 'Pour compléter et rehausser le splendide paysage urbain de Montréal, Carttera et Canderel présentent leur nouveau projet de condominium de luxe – 1455, rue de la Montagne. Découvrez une exploration de la beauté, de la passion et du luxe raffiné, réalisée pour captiver les sens et représenter le style de vie urbain.',
+            registerHeading: 'INSCRIVEZ-VOUS VOTRE INTÉRÊT',
+            registerFirstName: 'PRÉNOM*',
+            registerFirstNameInvalid: "S'il vous plaît entrez votre prénom",
+            registerLastName: 'NOM DE FAMILLE*',
+            registerLastNameInvalid: "S'il vous plaît entrez votre nom de famille",
+            registerEmail: 'COURRIEL*',
+            registerEmailInvalid: "S'il vous plaît entrez votre addresse courriel",
+            registerPhone: 'NUMÉRO DE TÉLÉPHONE*',
+            registerPhoneInvalid: "S'il vous plaît entrez votre numéro de téléphone ",
+            registerIsBroker: 'ÊTES-VOUS UN COURTIER?*',
+            registerIsBrokerOptNo: 'NON',
+            registerIsBrokerOptYes: 'OUI',
+            registerIsBrokerInvalid: "S'il vous plaît veuillez nous dire si vous êtes un courtier",
+            registerSuitePref: 'QUELLE UNITÉ VOUS INTÉRESSE?',
+            registerSuitePrefOpt1: 'UNE CHAMBRE',
+            registerSuitePrefOpt2: 'UNE CHAMBRE + SÉJOUR',
+            registerSuitePrefOpt3: 'DEUX CHAMBRE',
+            registerSuitePrefOpt4: 'DEUX CHAMBRE + SÉJOUR',
+            registerSuitePrefOpt5: 'TROIS CHAMBRE',
+            registerSuitePrefInvalid: "S'il vous plaît dites-nous quelle unité vous préférez",
+            registermandatoryFields: '* CHAMPS OBLIGATOIRES',
+            registerSubmit: 'SOUMETTRE',
+            registerConsent: 'JE CONSENS À RECEVOIR DES COMMUNICATIONS FUTURES',
+        };
+    </script>
 </head>
 
 <body class="home">
@@ -15,22 +74,24 @@
             <div class="row">
                 <div class="col-12 text-center">
                     <img src="assets/img/logo.png" />
-                    <h2 class="dm-heading">ARRIVING SOON</h2>
+                    <h2 class="dm-heading dm-heading-1">ARRIVERA BIENTÔT</h2>
 
-                    <h2 class="dm-heading">THE NEW LANDMARK</h2>
+                    <h2 class="dm-heading dm-heading-2">UNE NOUVELLE ADRESSE EMBLÉMATIQUE</h2>
 
-                    <p class="dm-copy">SET TO COMPLEMENT AND ELEVATE MONTREAL'S GORGEOUS CITYSPACE, CANDEREL
-                        AND CARTTERA INTRODUCE THEIR STUNNING NEW CONDOMINIUM, 1455 RUE DE LA MONTAGNE.
-                        UNCOVER A TRULY REFINED EXPLORATION OF BEAUTY, PASSION AND LUXURY, CRAFTED
-                        TO EXCITE THE SENSES AND EMBODY THE URBAN LIFESTYLE.</p>
+                    <p class="dm-copy">Pour compléter et rehausser le splendide paysage urbain de Montréal, Carttera
+                        et Canderel présentent leur nouveau projet de condominium de luxe – 1455,
+                        rue de la Montagne. Découvrez une exploration de la beauté, de la passion
+                        et du luxe raffiné, réalisée pour captiver les sens et représenter le style
+                        de vie urbain.</p>
                 </div>
             </div>
+        </div>
     </section>
     <section class="dm-register" id="register">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
-                    <h3 class="dm-subheading">REGISTER YOUR INTEREST</h3>
+                    <h3 class="dm-subheading">INSCRIVEZ-VOUS VOTRE INTÉRÊT</h3>
 
                     <form id="dm-register-form" action="register.php" method="post">
                         <div class="dm-form-container">
@@ -39,13 +100,13 @@
                             <div class="row dm-form-fields">
                                 <div class="col-12 mr-auto col-lg-5">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" id="FirstName" name="FirstName" placeholder="First Name" /> <small id="v-error-FirstName" class="invalid-feedback form-text text-danger">Please enter your first name.</small>
+                                        <input type="text" class="form-control" id="FirstName" name="FirstName" placeholder="PRÉNOM*" /> <small id="v-error-FirstName" class="invalid-feedback form-text text-danger">Entrez votre prénom SVP</small>
 
                                     </div>
                                 </div>
                                 <div class="col-12 ml-auto col-lg-5">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" id="LastName" name="LastName" placeholder="Last Name" /> <small id="v-error-LastName" class="invalid-feedback form-text text-danger">Please enter your last name.</small>
+                                        <input type="text" class="form-control" id="LastName" name="LastName" placeholder="NOM DE FAMILLE*" /> <small id="v-error-LastName" class="invalid-feedback form-text text-danger">Entrez votre nom de famille SVP</small>
 
                                     </div>
                                 </div>
@@ -67,23 +128,23 @@
                             <div class="row dm-form-fields">
                                 <div class="col-12 mr-auto col-lg-5">
                                     <div class="form-group">
-                                        <select class="form-control">
-                                            <option selected disabled>Are you a broker?</option>
-                                            <option value="no">No</option>
-                                            <option value="yes">Yes</option>
-                                        </select> <small id="v-error-Bedrooms" class="invalid-feedback form-text text-danger">Please tell us whether you are a broker.</small>
+                                        <select class="form-control" id="IsBroker" name="IsBroker">
+                                            <option id="IsBroker-select-opt" selected disabled>Are you a broker?</option>
+                                            <option id="IsBroker-select-opt-no" value="no">No</option>
+                                            <option id="IsBroker-select-opt-yes" value="yes">Yes</option>
+                                        </select> <small id="v-error-IsBroker" class="invalid-feedback form-text text-danger">Please tell us whether you are a broker.</small>
 
                                     </div>
                                 </div>
                                 <div class="col-12 ml-auto col-lg-5">
                                     <div class="form-group">
                                         <select class="form-control" id="Bedrooms" name="Bedrooms">
-                                            <option selected disabled>WHAT SUITE ARE YOU INTERESTED IN?</option>
-                                            <option value="1 Bedroom">One Bedroom</option>
-                                            <option value="1 Bedroom + Den">One Bedroom + Den</option>
-                                            <option value="2 Bedroom">Two Bedroom</option>
-                                            <option value="2 Bedroom+ Den">Two Bedroom + Den</option>
-                                            <option value="3 Bedroom">Three Bedroom</option>
+                                            <option id="Bedrooms-select-opt" selected disabled>WHAT SUITE ARE YOU INTERESTED IN?</option>
+                                            <option id="Bedrooms-select-opt-1" value="1 Bedroom">One Bedroom</option>
+                                            <option id="Bedrooms-select-opt-2" value="1 Bedroom + Den">One Bedroom + Den</option>
+                                            <option id="Bedrooms-select-opt-3" value="2 Bedroom">Two Bedroom</option>
+                                            <option id="Bedrooms-select-opt-4" value="2 Bedroom+ Den">Two Bedroom + Den</option>
+                                            <option id="Bedrooms-select-opt-5" value="3 Bedroom">Three Bedroom</option>
                                         </select> <small id="v-error-Bedrooms" class="invalid-feedback form-text text-danger">Please enter your suite preference.</small>
 
                                     </div>
@@ -101,7 +162,7 @@
                                 <div class="col-12">
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" value="" id="Custom1" name="Custom1" />
-                                        <label class="form-check-label" for="Custom1">I CONSENT TO RECEIVE FUTURE COMMUNICATION</label>
+                                        <label class="form-check-label" for="Custom1" id="Custom1-label">I CONSENT TO RECEIVE FUTURE COMMUNICATION</label>
                                     </div>
                                 </div>
                             </div>
