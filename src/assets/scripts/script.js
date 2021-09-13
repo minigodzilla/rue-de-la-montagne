@@ -203,7 +203,6 @@ $(function()
 
 		var $form              = $(this);
 		var $inputs            = $form.find ('.form-control.mandatory, select');
-		var $checkboxes        = $form.find ('.form-check-input');
 		var $email             = $form.find ('.form-control[name=Email]');
 		var $postal            = $form.find ('.form-control[name=PostalCode]');
 		var $submit            = $form.find ('.btn-submit');
@@ -252,21 +251,6 @@ $(function()
 				$email.removeClass ('is-invalid').addClass ('is-valid');
 			}
 		}
-
-		// check for checked checkboxes
-		$checkboxes.each (function()
-		{
-			if ($(this).prop("checked") == false)
-			{
-				$(this).removeClass ('is-valid').addClass ('is-invalid');
-				errorState = true;
-			}
-
-			else
-			{
-				$(this).removeClass ('is-invalid').addClass ('is-valid');
-			}
-		});
 
 		// if form has errors
 		if (errorState)
