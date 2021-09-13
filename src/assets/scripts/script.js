@@ -3,19 +3,19 @@ let textEn = {
 	introHeading2: 'THE NEW LANDMARK',
 	introCopy: "SET TO COMPLEMENT AND ELEVATE MONTREAL'S GORGEOUS CITYSCAPE, CARTTERA AND CANDEREL INTRODUCE THEIR STUNNING NEW CONDOMINIUM, 1455 RUE DE LA MONTAGNE. UNCOVER A TRULY REFINED EXPLORATION OF BEAUTY, PASSION AND LUXURY, CRAFTED TO EXCITE THE SENSES AND EMBODY THE URBAN LIFESTYLE.",
 	registerHeading: 'REGISTER YOUR INTEREST',
-	registerFirstName: 'FIRST NAME',
+	registerFirstName: 'FIRST NAME *',
 	registerFirstNameInvalid: 'Please enter your first name.',
-	registerLastName: 'LAST NAME',
+	registerLastName: 'LAST NAME *',
 	registerLastNameInvalid: 'Please enter your last name.',
-	registerEmail: 'EMAIL',
+	registerEmail: 'EMAIL *',
 	registerEmailInvalid: 'Please enter your email address.',
-	registerPhone: 'PHONE',
+	registerPhone: 'PHONE *',
 	registerPhoneInvalid: 'Please enter your phone number.',
-	registerIsBroker: 'ARE YOU A BROKER?',
+	registerIsBroker: 'ARE YOU A BROKER? *',
 	registerIsBrokerOptNo: 'NO',
 	registerIsBrokerOptYes: 'YES',
 	registerIsBrokerInvalid: 'Please tell us whether you are a broker.',
-	registerSuitePref: 'WHAT SUITE ARE YOU INTERESTED IN?',
+	registerSuitePref: 'WHAT SUITE ARE YOU INTERESTED IN? *',
 	registerSuitePrefOpt1: 'ONE BEDROOM',
 	registerSuitePrefOpt2: 'One Bedroom + Den',
 	registerSuitePrefOpt3: 'Two Bedroom',
@@ -202,7 +202,7 @@ $(function()
 		///////////////////////////////////////////////////////////////////////
 
 		var $form              = $(this);
-		var $inputs            = $form.find ('.form-control, select');
+		var $inputs            = $form.find ('.form-control.mandatory, select');
 		var $checkboxes        = $form.find ('.form-check-input');
 		var $email             = $form.find ('.form-control[name=Email]');
 		var $postal            = $form.find ('.form-control[name=PostalCode]');
