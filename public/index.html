@@ -7,68 +7,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>1455, Rue de la Montagne</title>
     <link rel="stylesheet" href="assets/css/style.css" />
-    <script type="text/javascript">
-        let textEn = {
-            introHeading1: 'ARRIVING SOON',
-            introHeading2: 'THE NEW LANDMARK',
-            introCopy: "SET TO COMPLEMENT AND ELEVATE MONTREAL'S GORGEOUS CITYSCAPE, CARTTERA AND CANDEREL INTRODUCE THEIR STUNNING NEW CONDOMINIUM, 1455 RUE DE LA MONTAGNE. UNCOVER A TRULY REFINED EXPLORATION OF BEAUTY, PASSION AND LUXURY, CRAFTED TO EXCITE THE SENSES AND EMBODY THE URBAN LIFESTYLE.",
-            registerHeading: 'REGISTER YOUR INTEREST',
-            registerFirstName: 'FIRST NAME',
-            registerFirstNameInvalid: 'Please enter your first name.',
-            registerLastName: 'LAST NAME',
-            registerLastNameInvalid: 'Please enter your last name.',
-            registerEmail: 'EMAIL',
-            registerEmailInvalid: 'Please enter your email address.',
-            registerPhone: 'PHONE',
-            registerPhoneInvalid: 'Please enter your phone number.',
-            registerIsBroker: 'ARE YOU A BROKER?',
-            registerIsBrokerOptNo: 'NO',
-            registerIsBrokerOptYes: 'YES',
-            registerIsBrokerInvalid: 'Please tell us whether you are a broker.',
-            registerSuitePref: 'WHAT SUITE ARE YOU INTERESTED IN?',
-            registerSuitePrefOpt1: 'ONE BEDROOM',
-            registerSuitePrefOpt2: 'One Bedroom + Den',
-            registerSuitePrefOpt3: 'Two Bedroom',
-            registerSuitePrefOpt4: 'Two Bedroom + Den',
-            registerSuitePrefOpt5: 'Three Bedroom',
-            registerSuitePrefInvalid: 'Please enter your suite preference.',
-            registermandatoryFields: '* MANDATORY FIELDS',
-            registerSubmit: 'SUBMIT',
-            registerConsent: 'I CONSENT TO RECEIVE FUTURE COMMUNICATION',
-        };
-
-        let textFr = {
-            introHeading1: 'ARRIVERA BIENTÔT',
-            introHeading2: 'UNE NOUVELLE ADRESSE EMBLÉMATIQUE',
-            introCopy: 'Pour compléter et rehausser le splendide paysage urbain de Montréal, Carttera et Canderel présentent leur nouveau projet de condominium de luxe – 1455, rue de la Montagne. Découvrez une exploration de la beauté, de la passion et du luxe raffiné, réalisée pour captiver les sens et représenter le style de vie urbain.',
-            registerHeading: 'INSCRIVEZ-VOUS VOTRE INTÉRÊT',
-            registerFirstName: 'PRÉNOM*',
-            registerFirstNameInvalid: "S'il vous plaît entrez votre prénom",
-            registerLastName: 'NOM DE FAMILLE*',
-            registerLastNameInvalid: "S'il vous plaît entrez votre nom de famille",
-            registerEmail: 'COURRIEL*',
-            registerEmailInvalid: "S'il vous plaît entrez votre addresse courriel",
-            registerPhone: 'NUMÉRO DE TÉLÉPHONE*',
-            registerPhoneInvalid: "S'il vous plaît entrez votre numéro de téléphone ",
-            registerIsBroker: 'ÊTES-VOUS UN COURTIER?*',
-            registerIsBrokerOptNo: 'NON',
-            registerIsBrokerOptYes: 'OUI',
-            registerIsBrokerInvalid: "S'il vous plaît veuillez nous dire si vous êtes un courtier",
-            registerSuitePref: 'QUELLE UNITÉ VOUS INTÉRESSE?',
-            registerSuitePrefOpt1: 'UNE CHAMBRE',
-            registerSuitePrefOpt2: 'UNE CHAMBRE + SÉJOUR',
-            registerSuitePrefOpt3: 'DEUX CHAMBRE',
-            registerSuitePrefOpt4: 'DEUX CHAMBRE + SÉJOUR',
-            registerSuitePrefOpt5: 'TROIS CHAMBRE',
-            registerSuitePrefInvalid: "S'il vous plaît dites-nous quelle unité vous préférez",
-            registermandatoryFields: '* CHAMPS OBLIGATOIRES',
-            registerSubmit: 'SOUMETTRE',
-            registerConsent: 'JE CONSENS À RECEVOIR DES COMMUNICATIONS FUTURES',
-        };
-    </script>
 </head>
 
 <body class="home">
+    <section class="dm-lang">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-right"><a class="fr" href="/">FR</a> | <a href="/?en" class="en">EN</a>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="dm-intro">
         <div class="container">
             <div class="row">
@@ -100,13 +49,13 @@
                             <div class="row dm-form-fields">
                                 <div class="col-12 mr-auto col-lg-5">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" id="FirstName" name="FirstName" placeholder="PRÉNOM*" /> <small id="v-error-FirstName" class="invalid-feedback form-text text-danger">Entrez votre prénom SVP</small>
+                                        <input type="text" class="form-control" id="FirstName" name="FirstName" placeholder="PRÉNOM*" /> <small id="v-error-FirstName" class="invalid-feedback form-text text-danger">S'il vous plaît entrez votre prénom</small>
 
                                     </div>
                                 </div>
                                 <div class="col-12 ml-auto col-lg-5">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" id="LastName" name="LastName" placeholder="NOM DE FAMILLE*" /> <small id="v-error-LastName" class="invalid-feedback form-text text-danger">Entrez votre nom de famille SVP</small>
+                                        <input type="text" class="form-control" id="LastName" name="LastName" placeholder="NOM DE FAMILLE*" /> <small id="v-error-LastName" class="invalid-feedback form-text text-danger">S'il vous plaît entrez votre nom de famille</small>
 
                                     </div>
                                 </div>
@@ -114,13 +63,13 @@
                             <div class="row dm-form-fields">
                                 <div class="col-12 mr-auto col-lg-5">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" id="Email" name="Email" placeholder="COURRIEL*" /> <small id="v-error-Email" class="invalid-feedback form-text text-danger">ntrez votre addresse courriel SVP</small>
+                                        <input type="text" class="form-control" id="Email" name="Email" placeholder="COURRIEL*" /> <small id="v-error-Email" class="invalid-feedback form-text text-danger">S'il vous plaît entrez votre addresse courriel</small>
 
                                     </div>
                                 </div>
                                 <div class="col-12 ml-auto col-lg-5">
                                     <div class="form-group">
-                                        <input type="tel" class="form-control" id="Phone" name="Phone" placeholder="NUMÉRO DE TÉLÉPHONE*" /> <small id="v-error-Phone" class="invalid-feedback form-text text-danger">Entrez votre numéro de téléphone SVP</small>
+                                        <input type="tel" class="form-control" id="Phone" name="Phone" placeholder="NUMÉRO DE TÉLÉPHONE*" /> <small id="v-error-Phone" class="invalid-feedback form-text text-danger">S'il vous plaît entrez votre numéro de téléphone</small>
 
                                     </div>
                                 </div>
@@ -132,7 +81,7 @@
                                             <option id="IsBroker-select-opt" selected disabled>ÊTES-VOUS UN COURTIER?*</option>
                                             <option id="IsBroker-select-opt-no" value="no">NON</option>
                                             <option id="IsBroker-select-opt-yes" value="yes">OUI</option>
-                                        </select> <small id="v-error-IsBroker" class="invalid-feedback form-text text-danger">Veuillez nous dire si vous êtes un courtier SVP</small>
+                                        </select> <small id="v-error-IsBroker" class="invalid-feedback form-text text-danger">Veuillez nous dire si vous êtes un courtier</small>
 
                                     </div>
                                 </div>
@@ -146,6 +95,14 @@
                                             <option id="Bedrooms-select-opt-4" value="2 Bedroom+ Den">DEUX CHAMBRE + SÉJOUR</option>
                                             <option id="Bedrooms-select-opt-5" value="3 Bedroom">TROIS CHAMBRE</option>
                                         </select> <small id="v-error-Bedrooms" class="invalid-feedback form-text text-danger">Please enter your suite preference.</small>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row dm-form-fields dm-BrokerCompany" style="display: none">
+                                <div class="col-12 mr-auto col-lg-5">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="BrokerCompany" name="BrokerCompany" placeholder="NOM DE COURTAGE*" /> <small id="v-error-BrokerCompany" class="invalid-feedback form-text text-danger">S'il vous plaît entrez votre nom de courtage</small>
 
                                     </div>
                                 </div>
@@ -187,6 +144,7 @@
             <div class="row">
                 <div class="col-12 text-center">
                     <img src="assets/img/developers.png" />
+                    <div class="dm-copyright">&copy; 2021 Carttera, Canderel et RAD Marketing. Tous droits réservés.</div>
                 </div>
             </div>
         </div>

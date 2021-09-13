@@ -1,3 +1,67 @@
+let textEn = {
+	introHeading1: 'ARRIVING SOON',
+	introHeading2: 'THE NEW LANDMARK',
+	introCopy: "SET TO COMPLEMENT AND ELEVATE MONTREAL'S GORGEOUS CITYSCAPE, CARTTERA AND CANDEREL INTRODUCE THEIR STUNNING NEW CONDOMINIUM, 1455 RUE DE LA MONTAGNE. UNCOVER A TRULY REFINED EXPLORATION OF BEAUTY, PASSION AND LUXURY, CRAFTED TO EXCITE THE SENSES AND EMBODY THE URBAN LIFESTYLE.",
+	registerHeading: 'REGISTER YOUR INTEREST',
+	registerFirstName: 'FIRST NAME',
+	registerFirstNameInvalid: 'Please enter your first name.',
+	registerLastName: 'LAST NAME',
+	registerLastNameInvalid: 'Please enter your last name.',
+	registerEmail: 'EMAIL',
+	registerEmailInvalid: 'Please enter your email address.',
+	registerPhone: 'PHONE',
+	registerPhoneInvalid: 'Please enter your phone number.',
+	registerIsBroker: 'ARE YOU A BROKER?',
+	registerIsBrokerOptNo: 'NO',
+	registerIsBrokerOptYes: 'YES',
+	registerIsBrokerInvalid: 'Please tell us whether you are a broker.',
+	registerSuitePref: 'WHAT SUITE ARE YOU INTERESTED IN?',
+	registerSuitePrefOpt1: 'ONE BEDROOM',
+	registerSuitePrefOpt2: 'One Bedroom + Den',
+	registerSuitePrefOpt3: 'Two Bedroom',
+	registerSuitePrefOpt4: 'Two Bedroom + Den',
+	registerSuitePrefOpt5: 'Three Bedroom',
+	registerSuitePrefInvalid: 'Please enter your suite preference.',
+	registerBrokerCompany: 'BROKERAGE NAME',
+	registerBrokerCompanyInvalid: 'Please give us your brokerage name',
+	registermandatoryFields: '* MANDATORY FIELDS',
+	registerSubmit: 'SUBMIT',
+	registerConsent: 'I CONSENT TO RECEIVE FUTURE COMMUNICATION',
+	copyright: '&copy; 2021 Carttera, Canderel & RAD Marketing. All Rights Reserved.',
+};
+
+let textFr = {
+	introHeading1: 'ARRIVERA BIENTÔT',
+	introHeading2: 'UNE NOUVELLE ADRESSE EMBLÉMATIQUE',
+	introCopy: 'Pour compléter et rehausser le splendide paysage urbain de Montréal, Carttera et Canderel présentent leur nouveau projet de condominium de luxe – 1455, rue de la Montagne. Découvrez une exploration de la beauté, de la passion et du luxe raffiné, réalisée pour captiver les sens et représenter le style de vie urbain.',
+	registerHeading: 'INSCRIVEZ-VOUS VOTRE INTÉRÊT',
+	registerFirstName: 'PRÉNOM*',
+	registerFirstNameInvalid: "S'il vous plaît entrez votre prénom",
+	registerLastName: 'NOM DE FAMILLE*',
+	registerLastNameInvalid: "S'il vous plaît entrez votre nom de famille",
+	registerEmail: 'COURRIEL*',
+	registerEmailInvalid: "S'il vous plaît entrez votre addresse courriel",
+	registerPhone: 'NUMÉRO DE TÉLÉPHONE*',
+	registerPhoneInvalid: "S'il vous plaît entrez votre numéro de téléphone ",
+	registerIsBroker: 'ÊTES-VOUS UN COURTIER?*',
+	registerIsBrokerOptNo: 'NON',
+	registerIsBrokerOptYes: 'OUI',
+	registerIsBrokerInvalid: "S'il vous plaît veuillez nous dire si vous êtes un courtier",
+	registerSuitePref: 'QUELLE UNITÉ VOUS INTÉRESSE?',
+	registerSuitePrefOpt1: 'UNE CHAMBRE',
+	registerSuitePrefOpt2: 'UNE CHAMBRE + SÉJOUR',
+	registerSuitePrefOpt3: 'DEUX CHAMBRE',
+	registerSuitePrefOpt4: 'DEUX CHAMBRE + SÉJOUR',
+	registerSuitePrefOpt5: 'TROIS CHAMBRE',
+	registerSuitePrefInvalid: "S'il vous plaît dites-nous quelle unité vous préférez",
+	registerBrokerCompany: 'NOM DE COURTAGE',
+	registerBrokerCompanyInvalid: "S'il vous plaît entrex votre nom de courtage",
+	registermandatoryFields: '* CHAMPS OBLIGATOIRES',
+	registerSubmit: 'SOUMETTRE',
+	registerConsent: 'JE CONSENS À RECEVOIR DES COMMUNICATIONS FUTURES',
+	copyright: '&copy; 2021 Carttera, Canderel et RAD Marketing. Tous droits réservés.',
+};
+
 var urlString = window.location.href;
 var url = new URL(urlString);
 
@@ -5,8 +69,10 @@ var copy;
 
 if (url.searchParams.has('en')) {
 	copy = textEn;
+	$('.dm-lang').addClass('en');
 } else {
 	copy = textFr;
+	$('.dm-lang').addClass('fr');
 }
 
 $('.dm-intro .dm-heading-1').html(copy.introHeading1);
@@ -26,10 +92,26 @@ $('.dm-register #IsBroker-select-opt-no').html(copy.registerIsBrokerOptNo);
 $('.dm-register #IsBroker-select-opt-yes').html(copy.registerIsBrokerOptYes);
 $('.dm-register #v-error-IsBroker').html(copy.registerIsBrokerInvalid);
 $('.dm-register #Bedrooms-select-opt').html(copy.registerSuitePref);
+$('.dm-register #Bedrooms-select-opt-1').html(copy.registerSuitePrefOpt1);
+$('.dm-register #Bedrooms-select-opt-2').html(copy.registerSuitePrefOpt2);
+$('.dm-register #Bedrooms-select-opt-3').html(copy.registerSuitePrefOpt3);
+$('.dm-register #Bedrooms-select-opt-4').html(copy.registerSuitePrefOpt4);
+$('.dm-register #Bedrooms-select-opt-5').html(copy.registerSuitePrefOpt5);
 $('.dm-register #v-error-Bedrooms').html(copy.registerSuitePrefInvalid);
+$('.dm-register #BrokerCompany').attr('placeholder',copy.registerBrokerCompany);
+$('.dm-register #v-error-BrokerCompany').html(copy.registerBrokerCompanyInvalid);
 $('.dm-register .dm-mandatory').html(copy.registermandatoryFields);
 $('.dm-register .dm-btn-submit').html(copy.registerSubmit);
 $('.dm-register #Custom1-label').html(copy.registerConsent);
+$('.dm-developers .dm-copyright').html(copy.copyright);
+
+$('.dm-register #IsBroker').on('change', function() {
+	if ($(this).val() == 'yes') {
+		$('.dm-BrokerCompany').show();
+	} else {
+		$('.dm-BrokerCompany').hide();
+	}
+});
 
 //----------------------------------------------------------------------------//
 // ScrollMagic Animation incl. Lazy Load                                      //

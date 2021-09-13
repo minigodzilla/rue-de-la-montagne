@@ -258,6 +258,18 @@ section {
 	margin: 0 1em;
 }
 
+.dm-lang {
+	margin-top: 1em;
+	font-size: 0.675em;
+	font-weight: 500;
+	color: #888;
+
+	&.fr .fr,
+	&.en .en {
+		color: #fff;
+	}
+}
+
 .dm-intro {
 	padding-top: 5em;
 
@@ -314,4 +326,9 @@ section {
 .dm-developers {
 	margin-top: 3em;
 	padding-bottom: 3em;
+}
+
+.dm-copyright {
+	font-size: 0.5em;
+	margin-top: 3em;
 }
