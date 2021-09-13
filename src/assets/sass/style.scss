@@ -120,8 +120,8 @@ form {
 				}
 			}
 
-			textarea.form-control {
-				height: 7.5em;
+			select.form-control {
+				background-color: #000;
 			}
 		}
 
@@ -313,22 +313,6 @@ section {
 
 .dm-register {
 	padding-top: 5em;
-}
-
-.select {
-	min-height: 100%;
-
-	.dm-select {
-		position: relative;
-		display: flex;
-		min-height: 100vh;
-		color: #fff;
-		text-align: center;
-
-		@include media-breakpoint-down(md) {
-			flex-direction: column;
-		}
-	}
 }
 
 .dm-developers {
