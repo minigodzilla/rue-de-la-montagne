@@ -55,7 +55,7 @@ let textFr = {
 	registerSuitePrefOpt5: 'TROIS CHAMBRES',
 	registerSuitePrefInvalid: "S'il vous plaît dites-nous quelle unité vous préférez",
 	registerBrokerCompany: 'NOM DE COURTAGE',
-	registerBrokerCompanyInvalid: "S'il vous plaît entrex votre nom de courtage",
+	registerBrokerCompanyInvalid: "S'il vous plaît entrez votre nom de courtage",
 	registermandatoryFields: '* CHAMPS OBLIGATOIRES',
 	registerSubmit: 'SOUMETTRE',
 	registerConsent: 'JE CONSENS À RECEVOIR DES COMMUNICATIONS FUTURES',
