@@ -70,9 +70,12 @@ var copy;
 if (url.searchParams.has('en')) {
 	copy = textEn;
 	$('.dm-lang').addClass('en');
+	$('.dm-register #Language').val('en');
+
 } else {
 	copy = textFr;
 	$('.dm-lang').addClass('fr');
+	$('.dm-register #Language').val('fr');
 }
 
 $('.dm-intro .dm-heading-1').html(copy.introHeading1);
