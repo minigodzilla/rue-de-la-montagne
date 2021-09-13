@@ -25,7 +25,11 @@ body {
 	background-color: #000;
 
 	@include media-breakpoint-up(md) {
-		font-size: 1.6vw;
+		font-size: 1.6em;
+	}
+
+	@include media-breakpoint-up(lg) {
+		font-size: 1.5em;
 	}
 
 	@include media-breakpoint-up(xxl) {
@@ -70,6 +74,10 @@ h6 {
 	outline: 0;
 	box-shadow: none;
 	text-transform: uppercase;
+}
+
+.invalid-feedback {
+	font-size: 0.5em;
 }
 
 form {
